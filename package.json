@@ -2,10 +2,11 @@
   "name": "crud-api",
   "version": "1.0.0",
   "description": "",
-  "main": "index.ts",
+  "main": "index.js",
   "scripts": {
-    "dev": "nodemon index.ts",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "dev": "concurrently \"tsc --watch\" \"nodemon dist/index.js\"",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "tsc"
   },
   "repository": {
     "type": "git",
@@ -13,6 +14,7 @@
   },
   "author": "Ivan Hubarau",
   "license": "ISC",
+  "type": "module",
   "bugs": {
     "url": "https://github.com/lelek337/CRUD-API/issues"
   },
@@ -33,6 +35,8 @@
     "webpack-cli": "^5.0.1"
   },
   "dependencies": {
+    "@types/node": "^18.11.18",
+    "concurrently": "^7.6.0",
     "dotenv": "^16.0.3"
   }
 }
