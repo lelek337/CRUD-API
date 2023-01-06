@@ -1,3 +1,3 @@
-import { IUsers } from "./interfaceDB";
+import { IUser } from "./interfaceDB.js";
 
-export const databaseUsers: IUsers[] = [];
+export const databaseUsers: IUser[] = [];

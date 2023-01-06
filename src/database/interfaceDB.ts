@@ -1,5 +1,5 @@
-export interface IUsers {
-  id: string;
+export interface IUser {
+  id?: number;
   userName: string;
   age: string;
   hobby?: string;
