@@ -1,6 +1,6 @@
 export interface IUser {
-  id?: number;
+  id: string;
   userName: string;
   age: string;
-  hobby?: string;
+  hobby?: string[];
 }
