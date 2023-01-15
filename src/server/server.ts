@@ -98,7 +98,7 @@ export const server = http.createServer((req, res) => {
           indexDelete = -1;
           textDelete = resText.notId;
         } else if (getUserId == elem.id) {
-          res.statusCode = 200;
+          res.statusCode = 204;
           indexDelete = index;
           delete databaseUsers[index];
         };
