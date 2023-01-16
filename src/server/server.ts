@@ -59,7 +59,6 @@ export const server = http.createServer((req, res) => {
         databaseUsers.push(dataUser(dataBuffer));
       });
       res.statusCode = 201;
-      res.write(JSON.stringify(databaseUsers));
       res.end('Sent a new user to the database');
       break;
 

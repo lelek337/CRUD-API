@@ -4,9 +4,9 @@
   "description": "",
   "main": "dist/index.js",
   "scripts": {
-    "start:prod": "dist/index.js",
+    "start:prod": "node dist/index.js",
     "start:dev": "concurrently \"tsc --watch\" \"nodemon dist/index.js\"",
-    "test": "mocha **/test.js",
+    "test": "mocha **/tests/test.js",
     "build": "tsc"
   },
   "repository": {
